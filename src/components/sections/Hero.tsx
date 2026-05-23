@@ -105,11 +105,11 @@ export default function Hero() {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="flex items-center justify-center"
           >
-            <div className="relative w-[320px] h-[178px] sm:w-[480px] sm:h-[268px]">
+            <div className="relative w-64 h-64 sm:w-96 sm:h-96">
               <img
-                src="/images/logo-completo.jpg"
+                src="/images/logo-icon.png"
                 alt="DentiSalud Bávaro"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain drop-shadow-2xl"
               />
             </div>
           </motion.div>
