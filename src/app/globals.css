@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* ── DentiSalud Bávaro — Brand Colors ── */
+@theme {
+  --color-brand-50: #eef2ff;
+  --color-brand-100: #e0e7ff;
+  --color-brand-200: #c7d2fe;
+  --color-brand-300: #a5b4fc;
+  --color-brand-400: #818cf8;
+  --color-brand-500: #6366f1;
+  --color-brand-600: #0033cc;
+  --color-brand-700: #0029a3;
+  --color-brand-800: #001f7a;
+  --color-brand-900: #001452;
+
+  --color-accent-50: #e6faff;
+  --color-accent-100: #b3f0ff;
+  --color-accent-200: #80e5ff;
+  --color-accent-300: #4ddbff;
+  --color-accent-400: #1ad1ff;
+  --color-accent-500: #00ccff;
+  --color-accent-600: #00a3cc;
+  --color-accent-700: #007a99;
+  --color-accent-800: #005266;
+  --color-accent-900: #002933;
+}
+
+/* ── Smooth Scroll ── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Glassmorphism ── */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(0, 51, 204, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 51, 204, 0.1);
+}
