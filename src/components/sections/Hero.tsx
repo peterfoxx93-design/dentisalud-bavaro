@@ -100,18 +100,36 @@ export default function Hero() {
 
           {/* Right — Brand Visual */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, scale: 0.9, y: 30 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
             className="flex items-center justify-center"
           >
-            <div className="relative w-64 h-64 sm:w-96 sm:h-96">
+            <motion.div
+              className="relative w-64 h-64 sm:w-96 sm:h-96"
+              animate={{
+                y: [0, -10, 0],
+                scale: [1, 1.03, 1],
+              }}
+              transition={{
+                y: {
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                },
+                scale: {
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                },
+              }}
+            >
               <img
                 src="/images/logo-icon.png"
                 alt="DentiSalud Bávaro"
                 className="w-full h-full object-contain drop-shadow-2xl"
               />
-            </div>
+            </motion.div>
           </motion.div>
         </div>
 
